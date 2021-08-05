@@ -1,0 +1,34 @@
+#%RAML 1.0
+title: second-raml
+/second:
+  get:
+    description: this is getting data
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "id":123,
+                "name":"klkreddy"
+              }
+  post:
+    description: inserting the data
+    body:
+      application/json:
+        example:
+          {
+            "id":124335874
+          }
+    responses:
+        201:
+          body:
+            application/json:
+              example:
+                
+                {
+                  "results":"successfully "
+                }
+                      
+                                            
+              
