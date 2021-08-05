@@ -1,0 +1,32 @@
+#%RAML 1.0
+title: reddy-raml
+/product:
+  get:
+    description: fetching the data
+    responses:
+      200:
+        body:
+          application/json:
+             example:
+               {
+                 "id":1
+               }
+  post:
+    description: inserting the data
+    body:
+      application/json:
+        example:
+          {
+            "id":12
+          }
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              {
+                "result":"successfully inserting the data"
+              }
+              
+                                          
+                                            
