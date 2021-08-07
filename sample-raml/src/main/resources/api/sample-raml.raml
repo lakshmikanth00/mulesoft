@@ -1,0 +1,59 @@
+#%RAML 1.0
+title: sample-raml
+/product:
+  get:
+    description: fetching the data
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "id":1,
+                "name":"lakshmi"
+              } 
+  post:
+    description: inserting the data
+    body:
+      application/json:
+        example:
+
+          {
+            "id:2"
+          }      
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              {
+                "results":"successfully inserting the data" 
+              }
+  put:
+    description: updating the data
+    body:
+      application/json:
+        example:
+          {
+            "id":1,
+            "name":"anji"
+          }
+    responses:
+      200:
+        body:
+          application/json:
+                  example:
+                          {
+                            "result":"updating the data"
+                          }      
+
+  delete:
+    description: deleting the data
+    body:
+      application/json:
+        example:
+          {
+            "id":1
+          }                        
+
+                                             
